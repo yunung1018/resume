@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人履歷</title>
+    <style>
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            overflow: auto;
+            white-space: pre-wrap; /* 允許自動換行 */
+        }
+        code {
+            font-family: monospace; /* 使用等寬字型 */
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body  id="about">
+    <header>
+        <h1>個人履歷</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">關於我</a></li>
+                <li><a href="#project">專案</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="about">
+    <h2>關於我</h2>
+    <div class="profile-container">
+        <img src="myphoto.jpg" alt="個人照片" class="profile-photo">
+
+    </div>
+    <div class="profile-info">
+        <h1></h1>
+        我目前就讀於國立台北科技大學資訊工程研究所，畢業於國立東華大學經濟學系及資訊工程學系，具備金融資料分析、深度學習與語言模型等跨領域的學術背景。
+        在學期間，我不僅保持優異的成績，還參與多項合作專題，並擔任教學助教，培養出良好的溝通能力與解決問題的能力。此外，我擁有強烈的學習意願，能快速適應不同環境並迎接挑戰。
+
+        <br>
+        <a href="畢業證書.pdf" target="_blank" class="info-box">學歷證明</a>
+        <a href="成績排名證明.pdf" target="_blank" class="info-box">成績優異證明</a>
+        
+            <!-- <span class="close">&times;</span> -->
+    
+
+        <a href="其他有利審查資料.pdf" target="_blank" class="info-box">專題研究檔案</a>
+    <a href="鄭羽農的簡歷.pdf"  target="_blank" class="info-box">
+        自傳檔案
+    </a>
+    </div>
+    <br>
+
+    <section id="project">
+        
+    <h2>學習經歷與作品</h2>
+        <p>以下是我曾完成的作品與技術應用：</p>
+        <ul>
+            <li>
+                <strong>股價預測與投資組合管理網站</strong>：這是一個多元股票投資組合平台，利用深度學習和時序模型進行股價預測，並提供風險評估與投資建議。在該專案中，我負責預測模型構建及爬蟲財報。
+                <br>
+                <a href="#" id="showVideo" class="info-box" class="button-link"   >點擊展示影片</a>
+                <div id="videoModal" class="modal">
+                    <!-- <span class="close">&times;</span> -->
+                    <div class="modal-content">
+                        <iframe id="modalVideo" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <strong>Kaggle 競賽</strong>：我在 Kaggle 上參加了數據分析競賽，從中學會了如何處理大規模數據，並運用機器學習技術進行預測分析。
+                <br>
+                <a href="https://www.kaggle.com/code/cyn1018/rf-xgb-knn-svm-with-wrapper-and-smote-enn-91"  class="info-box" class="button-link" target="_blank">點擊連結到我的 Kaggle</a>
+            <li>
+                <strong>CAPM投資組合分析報告</strong>：這是一個進行回測的投資組合分析報告，利用CAPM模型進行風險評估與投資建議。
+                <br>
+                <a href="CAPM股票投資組合.pdf"  target="_blank" class="info-box">
+                    點擊觀看投資報告分析
+                </a>            
+            </li>
+
+            <li>
+               <strong>東華車友即時LINE BOT (已停止運行)</strong>：這是一個爬取FB貼文並且自動傳訊息到LINE BOT提醒的爬蟲專案。
+               <br>
+               <a href="#" id="showImage3" class="info-box" class="button-link">點擊展示專案照片</a>
+                <div id="imageModal3" class="modal">
+                    <!-- <span class="close">&times;</span> -->
+                    <img class="modal-content" id="modalImage3" src="東華LINE BOT.png" alt="">
+                </div>
+            </li>
+            <li>
+                <strong>基於大型語言模型的點餐推薦系統–以速食連鎖餐廳為例</strong>：使用過Anything LLM去部署本地語言模型和串接API，並利用內建的RAG技術去製作一個點餐問答系統，並投稿於2025決策分析研討會。
+                <br>
+                <a href="研討會投稿.pdf" target="_blank" class="info-box">研討會投稿證明</a>
+                <br>
+             </li>
+             <li>
+                <strong>中美貿易戰對台灣出口至中國和美國的影響</strong>：分析台灣產業在中美貿易戰底下的變化，利用雙重差分法進行分析。
+                <br>
+                <a href="#" id="showImage2" class="info-box" class="button-link">專題優勝</a>
+                <div id="imageModal2" class="modal">
+                    <!-- <span class="close">&times;</span> -->
+                    <img class="modal-content" id="modalImage2" src="專題競賽名次.jpg" alt="">
+                </div>
+                <br>
+             </li>
+             
+
+        </ul>
+        </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+/* 通用樣式 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+.info-box {
+    display: inline-block;
+    border: 2px solid #B0A99F; /* 灰米色邊框 */
+    border-radius: 5px; /* 邊角圓滑 */
+    padding: 2px; /* 內邊距 */
+    background-color: #E6E1D3; /* 灰米色背景 */
+    text-align: center; /* 文字置中 */
+    text-decoration: none; /* 去掉下劃線 */
+    color: black; /* 灰米色文字 */
+    position: relative; /* 為後面的提示提供位置基準 */
+    transition: background-color 0.3s, border-color 0.3s; /* 增加過渡效果 */
+    font-size: 12px; /* 調整字體大小 */
+
+}
+
+.info-box:hover {
+    background-color: #D1CCBF; /* 懸停時的背景顏色 */
+    border-color: #8A7B6C; /* 懸停時的邊框顏色 */
+}
+
+.info-box::after {
+    color: #666; /* 提示顏色 */
+    display: block; /* 使提示顯示為塊元素 */
+    margin-top: 5px; /* 上邊距 */
+}
+header {
+    background: black;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+#about {
+    background: #f4f4f4;
+}
+
+
+.button-link {
+    color: black;
+    text-decoration: none;
+}
+
+.button-link:hover {
+    color: blue;
+}
+
+/* 圖片樣式 */
+.profile-photo {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+} 
+
+/* 模態窗口樣式 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse; /* 讓表格邊框合併 */
+    margin: 20px auto;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid black; /* 為每個儲存格加上黑色邊框 */
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2; /* 增加標題背景色 */
+}
+
+.modal-content {
+    margin: auto; /* 讓內容居中 */
+    padding: 0; /* 取消內邊距，讓圖片更貼合 */
+    width: auto; /* 自動寬度 */
+    height: auto; /* 自動高度 */
+    max-width: 40%; /* 不限制最大寬度*/
+    max-height: 100%; /* 不限制最大高度  */
+    overflow: hidden; /* 顯示溢出的內容 */
+}
+
+
+.profile-container {
+    display: flex;
+    align-items: center; /* 垂直置中 */
+}
+
+.profile-photo {
+    width: 150px; /* 設定照片寬度 */
+    height: auto; /* 保持比例 */
+    margin-right: 20px; /* 照片和文字的間距 */
+}
+
+/* 去除鏈接的藍色底線和藍色字體 */
+.no-underline {
+    color: black; /* 設定字體顏色為黑色 */
+    text-decoration: none; /* 去除底線 */
+}
+.profile-info {
+    max-width: 1000px; /* 限制文字區域的最大寬度 */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal img, .modal iframe {
+    width: 100%;
+}
